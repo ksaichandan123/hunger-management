@@ -41,7 +41,7 @@ def register(request):
                 profile.profile_picture = 'default/default-user.jpeg'
                 profile.save()
 
-                return redirect('/accounts/login/?command=verification&email=' + email)
+                return render(request,'accounts/login.html')
 
             except Exception as e:
                 print(e)
