@@ -15,3 +15,7 @@ Q
 Procfile,b\c\bc3c68e880d1a01632bce79f69dd1387c7ba9c54
 L
 .github/workflows/django.yml,a\e\aeadebe44c28a011fc03333fc8fd026fb11dc4e4
+J
+.ebextension/django.config,3\2\32f3adf3f0d4fe3d51d7a398dde0b7d97197e8ed
+N
+.ebextension/01_migrate.config,c\f\cf86e8568f0cb0afb81a934588740e4345c26105

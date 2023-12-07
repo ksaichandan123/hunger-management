@@ -28,3 +28,14 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+
+    - name: Deploy to Heroku
+      run: |
+        wget https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-linux-x64.tar.gz -O heroku.tar.gz
+        tar -xvzf heroku.tar.gz
+        sudo mv heroku-cli-* /usr/local/lib/heroku
+        export PATH="/usr/local/lib/heroku/bin:$PATH"
+        heroku --version
+        heroku login -i
+        heroku git:remote -a hunger-manager-management
+        git push heroku main
