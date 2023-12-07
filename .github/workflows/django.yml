@@ -36,6 +36,6 @@ jobs:
         sudo mv heroku-cli-* /usr/local/lib/heroku
         export PATH="/usr/local/lib/heroku/bin:$PATH"
         heroku --version
-        heroku login -i
+        heroku login
         heroku git:remote -a hunger-manager-management
         git push heroku main
