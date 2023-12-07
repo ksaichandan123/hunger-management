@@ -99,16 +99,6 @@ DATABASES = {
     }
 }
 #
-# DATABASES = {
-#     'default': {
-#     'ENGINE': 'django.db.backends.postgresql',
-#     'NAME': 'ebdb',
-#     'USER': 'main',
-#     'PASSWORD': 'saichandan123',
-#     'HOST': 'awseb-e-bkqpgawcmp-stack-awsebrdsdatabase-vubabmzqruun.cyglntqs65wj.us-east-1.rds.amazonaws.com',
-#     'PORT': '5432',
-#         }
-#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -148,26 +138,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'djangoProject/static']
 
-# AWS_ACCESS_KEY_ID = 'ASIA4M42JXI7QWKM5LMD'
-# AWS_REGION = 'us-east-1'
-# AWS_SECRET_ACCESS_KEY = 'mgpZnCn3L7yuqkSvrpIygxYqzIUfO5K9/suUQWzK'
-# AWS_STORAGE_BUCKET_NAME = 'food-and-beverages-22184805'
-# AWS_LOCATION = 'static'
-# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-# AWS_S3_OBJECT_PARAMETERS = {
-#     'CacheControl': 'max-age=86400',
-# }
-# AWS_S3_FILE_OVERWRITE = False
-# AWS_DEFAULT_ACL = 'public-read'
-# AWS_LOCATION = 'static'
-# AWS_S3_SIGNATURE_VERSION = 's3v4'
-#
-# STATICFILES_DIRS = [
-#     'djangoProject/static',
-# ]
-# STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-# STATICFILES_STORAGE = 'storages.backends.s3.S3Storage'
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -182,12 +152,6 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ksaichadnan123@gmail.com'
-EMAIL_HOST_PASSWORD = 'saichandan123'
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'ksaichadnan123@gmail.com'
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

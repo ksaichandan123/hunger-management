@@ -19,6 +19,9 @@
     <orderEntry type="jdk" jdkName="Python 3.11 (djangoProject)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="512922d6-ec4f-4b74-a4fe-c26743b0c158" />
+  </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
