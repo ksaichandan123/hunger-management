@@ -29,20 +29,15 @@ jobs:
       run: |
         python manage.py test
 
-    - name: Update Heroku CLI
+    - name: Install Heroku CLI
       run: |
-        wget https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-linux-x64.tar.gz -O heroku.tar.gz
-        tar -xvzf heroku.tar.gz
-        sudo mv heroku-cli-* /usr/local/lib/heroku
-        export PATH="/usr/local/lib/heroku/bin:$PATH"
-        heroku --version
+        curl https://cli-assets.heroku.com/install.sh | sh
 
-        # Set Heroku API key
-        echo -n $HEROKU_API_KEY > ~/.netrc
-        chmod 600 ~/.netrc
+    - name: Login to Heroku
+      run: heroku login -i
 
-        # Add Heroku remote
-        heroku git:remote -a hunger-manager-management
-
-        # Push to Heroku
+    - name: Deploy to Heroku
+      run: |
+        git fetch --all --unshallow
+        git remote add heroku ${{ secrets.HEROKU_REMOTE_URL }}
         git push heroku main
