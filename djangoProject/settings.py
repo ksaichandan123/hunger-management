@@ -54,7 +54,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'django_session_timeout.middleware.SessionTimeoutMiddleware',
 ]
 
 # SESSION_EXPIRE_SECONDS = 3600  # 1 hour
