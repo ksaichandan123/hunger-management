@@ -36,6 +36,13 @@ jobs:
         sudo mv heroku-cli-* /usr/local/lib/heroku
         export PATH="/usr/local/lib/heroku/bin:$PATH"
         heroku --version
-        heroku login
+
+        # Set Heroku API key
+        echo -n $HEROKU_API_KEY > ~/.netrc
+        chmod 600 ~/.netrc
+
+        # Add Heroku remote
         heroku git:remote -a hunger-manager-management
+
+        # Push to Heroku
         git push heroku main

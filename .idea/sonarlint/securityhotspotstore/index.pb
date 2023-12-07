@@ -19,3 +19,5 @@ J
 .ebextension/django.config,3\2\32f3adf3f0d4fe3d51d7a398dde0b7d97197e8ed
 N
 .ebextension/01_migrate.config,c\f\cf86e8568f0cb0afb81a934588740e4345c26105
+A
+accounts/tests.py,d\d\dd34e9e1474cddb9e5d2f2e680bd1cb27ebbab6e
