@@ -7,7 +7,6 @@ urlpatterns=[
     path('logout/',views.logout, name='logout'),
     path('dashboard/',views.dashboard, name='dashboard'),
     path('',views.dashboard, name='dashboard'),
-
     path('activate/<uidb64>/<token>/', views.activate, name='activate'),
     path('resetpassword_validate/<uidb64>/<token>/', views.resetpassword_validate, name='resetpassword_validate'),
     path('resetpassword/',views.resetPassword, name='resetPassword'),
@@ -15,4 +14,5 @@ urlpatterns=[
     path('edit_profile/', views.edit_profile, name='edit_profile'),
     path('change_password/', views.change_password, name='change_password'),
     path('order_detail/<int:order_id>/', views.order_detail, name='order_detail'),
+    path('delete_account/', views.delete_account, name='delete_account'),
 ]

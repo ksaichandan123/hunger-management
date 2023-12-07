@@ -237,4 +237,22 @@ def order_detail(request, order_id):
     }
     return render(request, 'accounts/order_detail.html', context)
 
+@login_required(login_url='login')
+def delete_account(request):
+    if request.method == 'POST':
+        user = request.user
+
+        # Delete associated user profile
+        try:
+            profile = UserProfile.objects.get(user=user)
+            profile.delete()
+        except UserProfile.DoesNotExist:
+            pass
+        # Delete the user
+        user.delete()
+
+        messages.success(request, 'Your account has been deleted.')
+        return redirect('login')
+    return render(request, 'accounts/delete_account.html')
+
 
