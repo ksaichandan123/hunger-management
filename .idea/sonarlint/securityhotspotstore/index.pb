@@ -11,3 +11,7 @@ Q
 !templates/accounts/dashboard.html,1\3\131654c4d721ba02a5ce1888377c0341e14fc28a
 @
 requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
+8
+Procfile,b\c\bc3c68e880d1a01632bce79f69dd1387c7ba9c54
+L
+.github/workflows/django.yml,a\e\aeadebe44c28a011fc03333fc8fd026fb11dc4e4
