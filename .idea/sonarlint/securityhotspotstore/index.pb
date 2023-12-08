@@ -29,3 +29,6 @@ C
 templates/base.html,d\a\da7c237b85a69c00a9ab8c189bf63e22070fcac3
 _
 /djangoProject/static/js/bootstrap.bundle.min.js,a\a\aaa7c9ef1e1e276f59a1e748b15ebaadb15f1fbe
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
