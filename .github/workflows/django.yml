@@ -38,6 +38,6 @@ jobs:
 
     - name: Deploy to Heroku
       run: |
-        heroku config:set DISABLE_COLLECTSTATIC=1
+        heroku config:set DISABLE_COLLECTSTATIC=1 -a hunger-manager-management
         git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/hunger-manger-management.git
         git push heroku main
