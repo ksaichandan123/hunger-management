@@ -29,15 +29,15 @@ jobs:
       run: |
         python manage.py test
 
-    - name: Install Heroku CLI
-      run: |
-        curl https://cli-assets.heroku.com/install.sh | sh
-
-    - name: Login to Heroku
-      run: heroku login -i
-
-    - name: Deploy to Heroku
-      run: |
-        git fetch --all --unshallow
-        git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/hunger-manger-management.git
-        git push heroku main -a hunger-manager-management
+#    - name: Install Heroku CLI
+#      run: |
+#        curl https://cli-assets.heroku.com/install.sh | sh
+#
+#    - name: Login to Heroku
+#      run: heroku login -i
+#
+#    - name: Deploy to Heroku
+#      run: |
+#        git fetch --all --unshallow
+#        git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/hunger-manger-management.git
+#        git push heroku main -a hunger-manager-management
