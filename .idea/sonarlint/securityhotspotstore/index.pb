@@ -27,3 +27,5 @@ C
 templates/home.html,8\6\86f3a00c4de0ad1280042b4c75ce3672e5141a0f
 C
 templates/base.html,d\a\da7c237b85a69c00a9ab8c189bf63e22070fcac3
+_
+/djangoProject/static/js/bootstrap.bundle.min.js,a\a\aaa7c9ef1e1e276f59a1e748b15ebaadb15f1fbe
