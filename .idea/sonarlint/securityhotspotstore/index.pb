@@ -25,3 +25,5 @@ A
 static/css/ui.css,d\f\df9a4ce9379617992a93f5b215e8cd80ac67040a
 C
 templates/home.html,8\6\86f3a00c4de0ad1280042b4c75ce3672e5141a0f
+C
+templates/base.html,d\a\da7c237b85a69c00a9ab8c189bf63e22070fcac3
