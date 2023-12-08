@@ -40,4 +40,4 @@ jobs:
       run: |
         git fetch --all --unshallow
         git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/hunger-manger-management.git
-        git push heroku main
+        git push heroku hunger-manager-management:main
