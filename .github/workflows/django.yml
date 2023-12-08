@@ -40,5 +40,5 @@ jobs:
       run: |
         git fetch --all --unshallow
         git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/hunger-manger-management.git
-        heroku config:set DISABLE_COLLECTSTATIC=1
-        git push heroku main
+        heroku config:set DISABLE_COLLECTSTATIC=1 -a hunger-manger-management
+        git push heroku main 
