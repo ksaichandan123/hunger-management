@@ -38,6 +38,6 @@ jobs:
 
     - name: Deploy to Heroku
       run: |
+        git remote remove heroku
         git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/hunger-manger-management.git
-        git pull heroku main
         git push heroku main
