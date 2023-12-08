@@ -23,3 +23,5 @@ A
 accounts/tests.py,d\d\dd34e9e1474cddb9e5d2f2e680bd1cb27ebbab6e
 A
 static/css/ui.css,d\f\df9a4ce9379617992a93f5b215e8cd80ac67040a
+C
+templates/home.html,8\6\86f3a00c4de0ad1280042b4c75ce3672e5141a0f
