@@ -21,3 +21,5 @@ N
 .ebextension/01_migrate.config,c\f\cf86e8568f0cb0afb81a934588740e4345c26105
 A
 accounts/tests.py,d\d\dd34e9e1474cddb9e5d2f2e680bd1cb27ebbab6e
+A
+static/css/ui.css,d\f\df9a4ce9379617992a93f5b215e8cd80ac67040a
