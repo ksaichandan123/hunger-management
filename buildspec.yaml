@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.11
+      python: 3.9  # Choose one of the available Python versions (3.7, 3.8, or 3.9)
   pre_build:
     commands:
       - pip install --upgrade pip
