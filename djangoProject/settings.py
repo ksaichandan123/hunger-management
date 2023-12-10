@@ -57,10 +57,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# SESSION_EXPIRE_SECONDS = 3600  # 1 hour
-# SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
-# SESSION_TIMEOUT_REDIRECT = 'accounts/login'
-# SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_EXPIRE_SECONDS = 3600  # 1 hour
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
+SESSION_TIMEOUT_REDIRECT = 'accounts/login'
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 
 ROOT_URLCONF = 'djangoProject.urls'
@@ -133,12 +133,34 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/eb status
-#
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+AWS_ACCESS_KEY_ID = 'ASIATUYJP7SUL6ZKDYSO'
+AWS_SECRET_ACCESS_KEY = 'CAnBCL2bCL+2M7jdZBeHwSROKbh1S9GWdDRAbZNE'
+AWS_STORAGE_BUCKET_NAME = 'x22184805-hunger-management'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = 'public-read'
+AWS_LOCATION = 'static'
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'djangoProject', 'static'),
+    'djangoProject/static',
 ]
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+DEFAULT_FILE_STORAGE = 'djangoProject.media_storages.MediaStorage'
+
+# media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media'
+
+# STATIC_URL = 'static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'djangoProject', 'static'),
+# ]
 
 
 # STATIC_URL = '/static/'
@@ -148,9 +170,7 @@ STATICFILES_DIRS = [
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-# MEDIA FILES CONFIGURATION
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+
 
 
 

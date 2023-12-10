@@ -34,3 +34,9 @@ _
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 >
 buildspec.yaml,b\2\b2d1ad26c5bc92a88d07ff42b0044a7fe99b6e32
+D
+accounts/__init__.py,6\6\66f55cad95e855b835d1f61bb875e90339c35887
+O
+djangoProject/media_storages.py,b\9\b9e57068a0df2591ccb002000ef29f95821053c0
+E
+djangoProject/urls.py,b\9\b9ba27198ec48a20b06aca4c0be916d213ce20dd
