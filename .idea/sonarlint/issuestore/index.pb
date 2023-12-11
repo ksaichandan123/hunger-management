@@ -48,3 +48,5 @@ A
 orders/views.py,9\7\97b53262cdb30087af0a40ba2e56175486bd4d51
 M
 templates/accounts/login.html,d\6\d635734ec82b993014291a930b7e4273b5774e0a
+Q
+!templates/foodstore/checkout.html,2\2\220c2073c6c21a7873b5d8afcee287caca6fea16
