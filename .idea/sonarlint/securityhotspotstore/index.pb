@@ -50,3 +50,5 @@ M
 templates/accounts/login.html,d\6\d635734ec82b993014291a930b7e4273b5774e0a
 Q
 !templates/foodstore/checkout.html,2\2\220c2073c6c21a7873b5d8afcee287caca6fea16
+R
+"templates/foodstore/foodstore.html,2\b\2b98378d7a53b42ada1ecf0f8e1583be0134aad9

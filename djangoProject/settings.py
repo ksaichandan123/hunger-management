@@ -133,26 +133,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/eb status
-# aws_access_key_id = 'ASIATUYJP7SUPOMLYSOH'
-# aws_secret_access_key = 'Jy+yPXiuRHu2kYi1Nw9sPDM1aKeP2cRvMi+/eBbp'
-# aws_session_token = 'IQoJb3JpZ2luX2VjEKL//////////wEaCXVzLWVhc3QtMSJGMEQCICJrrGbYq+4p6vx1xleJVIMiaD0JsI+ZEb2NsHsDQyNbAiBcmDJRn31WaD+lBaU4XWU9qphQ4Hn8ASo+BJLsu0LuWir7AwgaEAMaDDI1MDczODYzNzk5MiIMMNIfXFXlUlmQ6vtsKtgD8JuCgJ1wNp70FIhzXHYBfrWEesJtrGoYxm8+jxitT52v9IPBC3abxGHpBtUEMRaFtyjT/43s/9ATrd7Flq2AOXt0th6ECOVNkQQO21VviZNgCDoomdoabYOHaSHa4Lx0dDHOIIhgDzJ5J5gjpzpoci5TRW86uro1u/FE5+BMUOLeEC6DDHNG3MQqyguPHM/TGnX572wmK3JvQd1HiCxbzd5FdKd4Q3lqd6HrvPctqKTTTlK3LAwR2UpgNk0PFCUBUPhF0yXZebNytZefMx2qBjG0q2gt5LqWofUBF4IVQpEfNUE+AN1ajOpDgbp3dqbizTxR0RGZeDpWWhj2zvLqF4Xgh/Z8gpwPBUNIRPvSCwao4OehIiGOtOvfjod/bpQocjsk8O62OxsYlagE037PKq3Ato8ltvSu06lfzEVY904Gb4pSWCuNaN1z9sEvR5PU+wv2unO7Mgl/4g9TScvO7OTf61tG62MCCCHL/lqQOBuEI190ImkRz7MuKhShTOuWAU0+won+0ryHU8gkkLmSjnjkSmetJ3eNO83V7gJmdGZVMWIaF/2ka8ARLZmneCNWy2DGsxyZG7Ig/kZWfJYHTXSWJi8Ca9A6eDDKvddc9+TgW1QeXxWHIDDqhN2rBjqnAeUm5JviWUttVUZjKIo4qMPhu8mLGvpadW3n8l9DOfAxRGhT43nSzuJI7gQKHL8bUTWSJ8auSk/lR6v/Yo7tugBADqRo5M5LbfDhZwHEwr6cusaKp2slwwRcrsFQoFYjdtvCxiB32mROCM9kzirshYUduUUdOGcQQPwP8a9ofI2aXFYZnFAhaTGNN5C7u50OTbICzhT2LcNGoO4rH9R9G5CQFauO0z5a'
-# aws_storage_bucket_name = 'x22184805-hunger-management'
-# aws_s3_custom_domain = '%s.s3.amazonaws.com' % aws_storage_bucket_name
-# aws_s3_object_parameters = {
-#     'CacheControl': 'max-age=86400',
-# }
-# aws_s3_file_overwrite = False
-# aws_default_acl = 'public-read'
-# aws_location = 'static'
-#
-# STATICFILES_DIRS = [
-#     'djangoProject/static',
-# ]
-# STATIC_URL = 'https://%s/%s/' % (aws_storage_bucket_name, aws_location)
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# DEFAULT_FILE_STORAGE = 'djangoProject.media_storages.MediaStorage'
-#
-# # media files configuration
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
 
