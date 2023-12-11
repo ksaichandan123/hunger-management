@@ -1,5 +1,4 @@
 
->python:S125Ÿ"Remove this commented out code.(èÙ×±8þ¡²§Å1
 dsecrets:S6687"KMake sure this Django key gets revoked, changed, and removed from the code.(÷þ°•
-wsecrets:S6290‰"VMake sure this AWS Secret Access Key gets revoked, changed, and removed from the code.(ÝæáÎ8Áˆ¼§Å1
-gsecrets:S6290ˆ"FMake sure the access granted with this AWS access key ID is restricted(·ßÜñ8ÓÂ»§Å1
+|secrets:S6290‰"VMake sure this AWS Secret Access Key gets revoked, changed, and removed from the code.(ë¡Ê¤úÿÿÿÿ8Áˆ¼§Å1
+gsecrets:S6290ˆ"FMake sure the access granted with this AWS access key ID is restricted( ¹øæ8ÓÂ»§Å1
