@@ -40,3 +40,9 @@ O
 djangoProject/media_storages.py,b\9\b9e57068a0df2591ccb002000ef29f95821053c0
 E
 djangoProject/urls.py,b\9\b9ba27198ec48a20b06aca4c0be916d213ce20dd
+>
+carts/views.py,2\e\2eed0cedf778ec05cdbb04f6909381f752197231
+A
+category/views.py,7\3\73029118bcb6a8e0e5afa78ec438471b15be5549
+?
+orders/views.py,9\7\97b53262cdb30087af0a40ba2e56175486bd4d51
