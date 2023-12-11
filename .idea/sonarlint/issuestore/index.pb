@@ -46,3 +46,5 @@ A
 category/views.py,7\3\73029118bcb6a8e0e5afa78ec438471b15be5549
 ?
 orders/views.py,9\7\97b53262cdb30087af0a40ba2e56175486bd4d51
+M
+templates/accounts/login.html,d\6\d635734ec82b993014291a930b7e4273b5774e0a
