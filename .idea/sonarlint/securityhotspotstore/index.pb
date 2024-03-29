@@ -11,8 +11,6 @@ Q
 !templates/accounts/dashboard.html,1\3\131654c4d721ba02a5ce1888377c0341e14fc28a
 @
 requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
-8
-Procfile,b\c\bc3c68e880d1a01632bce79f69dd1387c7ba9c54
 L
 .github/workflows/django.yml,a\e\aeadebe44c28a011fc03333fc8fd026fb11dc4e4
 J
@@ -21,8 +19,6 @@ N
 .ebextension/01_migrate.config,c\f\cf86e8568f0cb0afb81a934588740e4345c26105
 A
 accounts/tests.py,d\d\dd34e9e1474cddb9e5d2f2e680bd1cb27ebbab6e
-A
-static/css/ui.css,d\f\df9a4ce9379617992a93f5b215e8cd80ac67040a
 C
 templates/home.html,8\6\86f3a00c4de0ad1280042b4c75ce3672e5141a0f
 C
@@ -32,8 +28,6 @@ _
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
->
-buildspec.yaml,b\2\b2d1ad26c5bc92a88d07ff42b0044a7fe99b6e32
 D
 accounts/__init__.py,6\6\66f55cad95e855b835d1f61bb875e90339c35887
 O
@@ -52,3 +46,31 @@ Q
 !templates/foodstore/checkout.html,2\2\220c2073c6c21a7873b5d8afcee287caca6fea16
 R
 "templates/foodstore/foodstore.html,2\b\2b98378d7a53b42ada1ecf0f8e1583be0134aad9
+N
+templates/orders/payments.html,2\a\2acd16ed66af1d3e5808cb37c91de021b9985a72
+H
+static/css/bootstrap.css,4\2\42191ef3d936ed2bda6993a73206de85ff961151
+A
+category/admin.py,6\e\6e524f12f39075d5bf19f76844bdb5c2e9e02e70
+A
+accounts/admin.py,a\3\a3360866a37a1817d2b7bff9b4bc78c975e3b58e
+B
+category/models.py,5\f\5f602266fdcaf339e54da2230edac00348c5dea6
+B
+foodstore/views.py,b\0\b0002032deeb2a4c62217c58f54818ee598f5d3f
+C
+foodstore/models.py,0\3\03c048fabb43ea6b5c2ee7acef19cda7943adce9
+B
+accounts/models.py,6\1\61552fe05711cbaa3244c18deedf1d76e08d2649
+N
+category/context_processors.py,5\4\548d95c9e0f0091ee8543eac4165668c6010656a
+A
+category/tests.py,5\5\5520b2249ff6a9991b9d613cb30ff1e194cff8c3
+E
+djangoProject/wsgi.py,f\a\fa9330d61180417d799cd9051a62c8e359686909
+H
+foodstore/serializers.py,3\7\370cbd93c4c06c6bc8e4ec0740912a4bbc5e7267
+A
+foodstore/urls.py,0\e\0e0c3447ea93eb152510fb9d74de9364a6761b8a
+T
+$templates/orders/order_complete.html,b\a\ba58ab50e08ad5a9ad642f0e18b9cdf2b0ade778

@@ -3,6 +3,10 @@ from .models import Product
 from category.models import Category
 from carts.models import CartItem
 from django.db.models import Q
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from .serializers import ProductSerializer
 
 from carts.views import _cart_id
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
@@ -59,3 +63,15 @@ def search(request):
         'product_count': product_count,
     }
     return render(request, 'foodstore/foodstore.html', context)
+
+
+@api_view(['GET'])
+def category_products(request, category_slug):
+    try:
+        category = Category.objects.get(slug=category_slug)
+    except Category.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    products = Product.objects.filter(category=category, is_available=True)
+    serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data)

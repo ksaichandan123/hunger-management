@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'foodstore',
     'carts',
     'orders',
-    'storages'
+    'storages',
+    'rest_framework',
+    'corsheaders'
 
 
 ]
@@ -55,7 +57,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 SESSION_EXPIRE_SECONDS = 3600  # 1 hour
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
@@ -136,20 +141,12 @@ USE_TZ = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR /'static'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'djangoProject', 'static'),
+    'djangoProject/static',
 ]
-
-
-# STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = (os.path.join('djangoProject', 'static'),)
-# django_heroku.settings((locals()))
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
 
 
 
