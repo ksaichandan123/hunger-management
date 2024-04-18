@@ -13,10 +13,6 @@ Q
 requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
 L
 .github/workflows/django.yml,a\e\aeadebe44c28a011fc03333fc8fd026fb11dc4e4
-J
-.ebextension/django.config,3\2\32f3adf3f0d4fe3d51d7a398dde0b7d97197e8ed
-N
-.ebextension/01_migrate.config,c\f\cf86e8568f0cb0afb81a934588740e4345c26105
 A
 accounts/tests.py,d\d\dd34e9e1474cddb9e5d2f2e680bd1cb27ebbab6e
 C
@@ -74,3 +70,5 @@ A
 foodstore/urls.py,0\e\0e0c3447ea93eb152510fb9d74de9364a6761b8a
 T
 $templates/orders/order_complete.html,b\a\ba58ab50e08ad5a9ad642f0e18b9cdf2b0ade778
+K
+.ebextensions/django.config,0\9\090bdaee4cee8f72dd557cbfb76eb8fbc4f14d00
